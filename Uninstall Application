@@ -1,0 +1,14 @@
+#Basic Uninstaller using a WMI query
+$softwareName = "Insert Application Name in Quotes"
+
+# Get the product information for Grammarly
+$product = Get-WmiObject -Class Win32_Product | Where-Object { $_.Name -eq $softwareName }
+
+if ($product) {
+    # Uninstall Grammarly
+    $product.Uninstall()
+
+    Write-Host "Grammarly has been uninstalled."
+} else {
+    Write-Host "Grammarly is not found in the 'Add or Remove Programs' list."
+}
