@@ -1,9 +1,6 @@
-param (
-    [Parameter(Mandatory=$true)]
-        [string]$OldPrintServer,
-    [Parameter(Mandatory=$true)]
-        [string]$NewPrintServer
-)
+$NewPrintServer = "Insert New Print Server Name Here"
+$OldPrintServer = "Insert Old Print Server Name Here"
+
 
 #$ErrorActionPreference = 'SilentlyContinue'
 $Printers = Get-WmiObject -Class Win32_Printer | where { $_.Network -eq $true }
