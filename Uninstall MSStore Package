@@ -1,0 +1,1 @@
+Get-AppxPackage -AllUsers *Insert App Package Name Here* | Remove-AppxPackage  
