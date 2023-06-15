@@ -1,4 +1,4 @@
-#Basic Uninstaller using a WMI query
+#Basic Powershell Uninstaller using a WMI query
 $softwareName = "Insert Application Name in Quotes"
 
 # Get the product information for Grammarly
