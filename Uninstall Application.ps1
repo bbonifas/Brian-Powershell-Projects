@@ -8,7 +8,7 @@ if ($product) {
     # Uninstall SoftwareName
     $product.Uninstall()
 
-    Write-Host "SoftwareName has been uninstalled."
+    Write-Host "$SoftwareName has been uninstalled."
 } else {
-    Write-Host "SoftwareName is not found in the 'Add or Remove Programs' list."
+    Write-Host "$SoftwareName is not found in the 'Add or Remove Programs' list."
 }
